@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Survey form</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey form</h1>
+    <p id="description">
+      Thank you for taking the time to improved the platform
+    </p>
+    <div class="container">
+      <form action="post" id="survey-form">
+        <label for="name" id="name-label">Name</label> <br />
+        <input type="text" id="name" name="name" placeholder="Enter your name" /
+        required>
+        <br />
+        <label for="email" id="email-label">Email</label> <br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <br />
+        <label for="age" id="number-label">Age (optional)</label> <br />
+        <input
+          type="number"
+          id="number"
+          name="number"
+          min="16"
+          max="125"
+          placeholder="Age"
+        />
+        <br />
+        <label for="dropdown"
+          >Which option best describes your current role?</label
+        >
+        <br />
+        <select name="dropdown-options" id="dropdown">
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full Time Job</option>
+          <option value="full-time-learner">Full Time Learner</option>
+          <option value="prefer-not-to-say">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+        <br />
+        <label for="would-you"
+          >Would you recommend FreeCodeCamp to a friend?</label
+        >
+        <br />
+        <input
+          type="radio"
+          name="recommend"
+          value="definitely"
+        />Definitely<br />
+        <input type="radio" name="recommend" value="maybe" />Maybe <br />
+        <input type="radio" name="recommend" value="notsure" />Not sure <br />
+        <br />
+        <label for="favorite-feature"
+          >What is your favorite feature of FreeCodeCamp?</label
+        >
+        <br />
+        <select name="favorite-feature" id="dropdown2">
+          <option disabled selected value>Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="open-source">Open source</option>
+        </select>
+        <br />
+        <label for="see-improved"
+          >What would you like to see improved? (Check all that apply)</label
+        >
+        <br />
+        <input type="checkbox" value="front-end-projects" />Front-end-Projects
+        <br />
+        <input type="checkbox" value="back-end-projects" />Back-end-Projects
+        <br />
+        <input type="checkbox" value="data-visualizaion" />Data Visualization
+        <br />
+        <input type="checkbox" value="challenges" />Challenges
+        <br />
+        <input type="checkbox" value="open-source-community" />Open Source
+        Community
+        <br />
+        <input type="checkbox" value="gitter-help-roms" />Gitter-help-rooms
+        <br />
+        <input type="checkbox" value="videos" />Videos
+        <br />
+        <input type="checkbox" value="city-meetups" />City Meetups
+        <br />
+        <input type="checkbox" value="wiki" />Wiki
+        <br />
+        <input type="checkbox" value="forum" />Forum
+        <br />
+        <input type="checkbox" value="additional-courses" />Additional Courses
+        <br />
+        <label for="text-area">Any comments or suggestions?</label>
+        <br />
+        <textarea
+          name="text-area"
+          rows="5"
+          placeholder="Enter your comment here..."
+        ></textarea>
+        <br />
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </div>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  </body>
+</html>
