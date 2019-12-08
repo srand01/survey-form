@@ -38,6 +38,11 @@ body {
   }
 }
 
+@media (min-width: 992px){
+  .container {
+  max-width: 944px}
+}
+
 #title {
   text-transform: uppercase;
   text-align: center;
