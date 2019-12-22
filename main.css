@@ -38,9 +38,10 @@ body {
   }
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
   .container {
-  max-width: 944px}
+    max-width: 944px;
+  }
 }
 
 #title {
@@ -83,8 +84,13 @@ input[type="checkbox"][value="additional-courses"] {
 }
 
 #submit {
-  background: #37af65;
+  background: #1ea04f;
   color: snow;
-  border: 1px solid #37af65;
+  border: 1px solid #1ea04f;
   margin-bottom: 3.5em;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background: #37af65;
 }
